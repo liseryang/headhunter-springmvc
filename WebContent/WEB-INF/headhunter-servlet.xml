@@ -3,6 +3,16 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
 	<bean name="/helloworld.htm"
 		class="com.phai.headhunter.controller.HelloWorldController" />
+		
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	    <property name="prefix" value="/WEB-INF/jsp/" />
+	    <property name="suffix" value=".jsp" />
+	</bean>
+	
+		
+	
 </beans>

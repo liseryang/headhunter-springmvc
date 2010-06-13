@@ -17,6 +17,7 @@ public class HelloWorldController implements Controller {
 			HttpServletResponse response) throws ServletException, IOException {
 		logger.info("Return View");
 		logger.info("yoi");
-		return new ModelAndView("helloworld.jsp");
+		logger.info("nop");
+		return new ModelAndView("helloworld");
 	}
 }
